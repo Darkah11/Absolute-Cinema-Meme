@@ -27,7 +27,7 @@ export default function Home() {
             <h2 className=" uppercase text-2xl text-center font-medium">
               About $ABC
             </h2>
-            <p className=" text-center mt-3 text-lg">
+            <p className=" text-center mt-3 text-base">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
               doloremque nemo earum labore provident temporibus!
             </p>
@@ -42,7 +42,7 @@ export default function Home() {
           <button className=" hidden">See more</button>
         </div>
         <div className=" flex flex-col gap-y-5 mt-5 ">
-          <div className=" relative">
+          <div className=" relative w-fit mx-auto">
             <div className=" absolute top-0 left-0 w-full h-full img-overlay">
               <p className=" text-2xl absolute bottom-3 left-4 uppercase text-white">
                 Meme <br />
@@ -55,7 +55,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className=" relative">
+          <div className=" relative w-fit mx-auto">
             <div className=" absolute top-0 left-0 w-full h-full img-overlay">
               <p className=" text-2xl absolute bottom-3 left-4 uppercase text-white">
                 The <br />
@@ -68,7 +68,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className=" relative">
+          <div className=" relative w-fit mx-auto">
           <div className=" absolute top-0 left-0 w-full h-full img-overlay">
               <p className=" text-2xl absolute bottom-3 left-4 uppercase text-white">
                 Full <br />
@@ -81,7 +81,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className=" relative">
+          <div className=" relative w-fit mx-auto">
           <div className=" absolute top-0 left-0 w-full h-full img-overlay">
               <p className=" text-2xl absolute bottom-3 left-4 uppercase text-white">
                 The <br />
@@ -94,7 +94,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className=" relative">
+          <div className=" relative w-fit mx-auto">
           <div className=" absolute top-0 left-0 w-full h-full img-overlay">
               <p className=" text-2xl absolute bottom-3 left-4 uppercase text-white">
                 The <br />
@@ -107,7 +107,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className=" relative">
+          <div className=" relative w-fit mx-auto">
           <div className=" absolute top-0 left-0 w-full h-full img-overlay">
               <p className=" text-2xl absolute bottom-3 left-4 uppercase text-white">
                 Bullish <br />
@@ -120,7 +120,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className=" relative">
+          <div className=" relative w-fit mx-auto">
           <div className=" absolute top-0 left-0 w-full h-full img-overlay">
               <p className=" text-2xl absolute bottom-3 left-4 uppercase text-white">
                 The <br />
@@ -133,7 +133,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className=" relative">
+          <div className=" relative w-fit mx-auto">
           <div className=" absolute top-0 left-0 w-full h-full img-overlay">
               <p className=" text-2xl absolute bottom-3 left-4 uppercase text-white">
                 $ABC <br />
@@ -159,8 +159,11 @@ export default function Home() {
         </h2>
       </section>
       <footer className=" bg-black py-16 text-white">
-        <div className=" flex justify-center items-center">
+        <div className=" flex flex-col justify-center items-center">
           <img src="acm-logo.png" alt="" />
+          <button className=" text-sm border border-green-400 w-[130px] py-2 mx-auto uppercase font-medium text-green-400 my-4">
+            Visit us
+          </button>
         </div>
         <div className=" mt-5">
           <div className=" flex gap-x-3 items-center justify-center">
