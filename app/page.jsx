@@ -424,14 +424,11 @@ export default function Home() {
         </div>
         <div className=" mt-10">
           <div className=" flex gap-x-3 items-center justify-center">
-            <Link href={"/"}>
-              <img src="/icon-twitter.svg" alt="" />
+            <Link href={"https://t.me/c/2351718598/1342"}>
+              <img src="/telegram.svg" alt="" />
             </Link>
-            <Link href={"/"}>
-              <img src="/icon-pinterest.svg" alt="" />
-            </Link>
-            <Link href={"/"}>
-              <img src="/icon-instagram.svg" alt="" />
+            <Link href={"https://x.com/absolutecineABS"}>
+              <img src="/x.svg" alt="" />
             </Link>
           </div>
           <p className=" text-center text-sm mt-3">
