@@ -40,6 +40,9 @@ button {
   background-color: #05df72;
   z-index: -1;
 }
+.ca-container {
+  background-color: rgba(128, 128, 128, 0.7);
+}
 .scroller::-webkit-scrollbar {
   display: none;
 }

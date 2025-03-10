@@ -1,5 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import CopyButton from "./components/CopyButton";
+import { motion } from "framer-motion";
+import { fadeIn } from "./variants";
 
 export default function Home() {
   return (
@@ -10,18 +14,30 @@ export default function Home() {
           alt="hero background"
           className=" absolute top-0 left-0 w-full h-full object-cover"
         />
-        <div className=" absolute z-30 top-0">
+        <motion.div variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }} className=" absolute z-30 top-0">
           <img src="acm-logo.png" alt="" />
-        </div>
-        <div className=" max-w-[350px] md:max-w-fit relative z-30 py-7 lg:py-5 px-3 md:px-10 lg:px-12  border-2 border-green-400">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }}
+          className=" max-w-[350px] md:max-w-fit relative z-30 py-7 lg:py-5 px-3 md:px-10 lg:px-12  border-2 border-green-400"
+        >
           <h1 className=" text-5xl md:text-6xl lg:text-7xl text-white uppercase font-light leading-14 md:leading-16 lg:leading-20">
             Absolute <br /> Cinema <br /> $ABC{" "}
           </h1>
           {/* <h1 className=" text-3xl text-white uppercase">Do you know about the Absolute Cinema meme that our coin is based on? </h1> */}
-        </div>
+        </motion.div>
       </section>
       <section className=" px-5 py-16 lg:px-12 xl:px-42">
-        <div className=" mx-auto md:mx-0 relative w-fit md:w-full lg:w-fit md:flex md:justify-between gap-x-7 md:items-center">
+        <motion.div variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }} className=" mx-auto md:mx-0 relative w-fit md:w-full lg:w-fit md:flex md:justify-between gap-x-7 md:items-center">
           <img
             src="/about-img.png"
             alt=""
@@ -50,10 +66,13 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className=" px-5 py-10 lg:px-12 xl:px-24">
-        <div className=" flex md:items-center justify-center md:justify-between">
+        <motion.div variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }} className=" flex md:items-center justify-center md:justify-between">
           <h2 className=" uppercase text-center text-2xl font-medium">
             Our Memes
           </h2>
@@ -65,8 +84,11 @@ export default function Home() {
               See more
             </button>
           </Link>
-        </div>
-        <div className=" flex md:flex-wrap gap-x-5 md:gap-y-4 md:gap-x-0 md:justify-between overflow-x-scroll mt-5 scroller">
+        </motion.div>
+        <motion.div variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }} className=" flex md:flex-wrap gap-x-5 md:gap-y-4 md:gap-x-0 md:justify-between overflow-x-scroll mt-5 scroller">
           <div className=" relative w-fit md:w-[32%] lg:w-[24%]">
             <div className=" absolute top-0 left-0 w-full h-full img-overlay">
               <p className=" text-2xl absolute bottom-3 left-4 uppercase text-white">
@@ -171,7 +193,7 @@ export default function Home() {
               alt=""
             />
           </div>
-        </div>
+        </motion.div>
         {/* <div className=" flex flex-col gap-y-5 mt-5 ">
           <div className=" flex">
             <div className=" relative w-fit mx-auto">
@@ -306,7 +328,10 @@ export default function Home() {
             />
           </div>
         </div> */}
-        <div className=" flex justify-center items-center">
+        <motion.div variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }} className=" flex justify-center items-center">
           <Link
             href={"https://knowyourmeme.com/memes/absolute-cinema"}
             className=" mt-4 md:hidden"
@@ -315,13 +340,25 @@ export default function Home() {
               See more
             </button>
           </Link>
-        </div>
+        </motion.div>
       </section>
       <section className=" bg-green-400 py-16 px-5 lg:px-12 xl:pl-24">
-        <h2 className=" text-center text-3xl uppercase text-white">
-          How to buy
-        </h2>
-        <div className=" mt-8 flex flex-col md:flex-wrap  md:flex-row md:justify-between gap-y-5">
+        <motion.div variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }}>
+          <h2 className=" text-center text-3xl uppercase text-white">
+            How to buy
+          </h2>
+          <div className=" ca-container flex items-center w-fit py-2 px-5 gap-x-3 rounded-lg mx-auto mt-5 border border-gray-300">
+            <p className=" text-white">0x1d7c7A06BA6.....</p>
+            <CopyButton text={"0x1d7c7A06BA6F5A7ca84945b641617Aab8bBf1dE3"} />
+          </div>
+        </motion.div>
+        <motion.div variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }} className=" mt-8 flex flex-col md:flex-wrap  md:flex-row md:justify-between gap-y-5">
           <div className=" w-full md:w-[47%]  hover:bg-gray-950 relative bg-black text-white px-5 py-10">
             <p className=" text-green-400 absolute right-3 bottom-3 text-3xl font-bold">
               01
@@ -351,10 +388,11 @@ export default function Home() {
               03
             </p>
             <h3 className=" uppercase text-green-400 font-bold text-2xl">
-            BRIDGE TO ABSTRACT
+              BRIDGE TO ABSTRACT
             </h3>
             <p className=" mt-2">
-            Bridge your mainnet ETH to Abstract ETH . This is important as you will need it to swap for $ABC
+              Bridge your mainnet ETH to Abstract ETH . This is important as you
+              will need it to swap for $ABC
             </p>
           </div>
           <div className=" w-full md:w-[47%]  hover:bg-gray-950 relative bg-black text-white px-5 py-10">
@@ -365,17 +403,23 @@ export default function Home() {
               swap to $ABC
             </h3>
             <p className=" mt-2">
-            Using the abstract trade function at abs.xyz, You can now swap your abstract ETH for $ABC on the abstract dashboard
+              Using the abstract trade function at abs.xyz, You can now swap
+              your abstract ETH for $ABC on the abstract dashboard
             </p>
           </div>
-          
-        </div>
+        </motion.div>
       </section>
       <section className=" bg-green-950 py-16 px-5">
-        <h2 className=" text-center text-3xl uppercase text-white ">
+        <motion.h2 variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }} className=" text-center text-3xl uppercase text-white ">
           Tokenomics
-        </h2>
-        <div className=" mt-8 flex flex-col md:flex-wrap  md:flex-row md:justify-between md:items-center gap-y-5">
+        </motion.h2>
+        <motion.div variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }} className=" mt-8 flex flex-col md:flex-wrap  md:flex-row md:justify-between md:items-center gap-y-5">
           <div className=" hover:border-black bg-white w-full md:w-[45%] border-5 border-green-400 py-8 text-center mx-auto">
             <h3 className=" text-green-950 uppercase font-bold text-2xl">
               Symbol
@@ -408,10 +452,13 @@ export default function Home() {
             </h3>
             <p className=" text-lg font-medium uppercase">burned and locked</p>
           </div>
-        </div>
+        </motion.div>
       </section>
       <footer className=" bg-black py-16 text-white">
-        <div className=" flex flex-col justify-center items-center">
+        <motion.div variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }} className=" flex flex-col justify-center items-center">
           <img src="acm-logo.png" alt="" />
           <Link
             href={"https://knowyourmeme.com/memes/absolute-cinema"}
@@ -421,8 +468,11 @@ export default function Home() {
               Visit us
             </button>
           </Link>
-        </div>
-        <div className=" mt-10">
+        </motion.div>
+        <motion.div variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false }} className=" mt-10">
           <div className=" flex gap-x-3 items-center justify-center">
             <Link href={"https://t.me/c/2351718598/1342"}>
               <img src="/telegram.svg" alt="" />
@@ -434,7 +484,7 @@ export default function Home() {
           <p className=" text-center text-sm mt-3">
             &copy; 2025 Absolute Cinema Meme. All rights reserved.
           </p>
-        </div>
+        </motion.div>
       </footer>
     </>
   );
