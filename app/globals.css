@@ -10,5 +10,39 @@
   font-family: "Poppins", serif;
 }
 .img-overlay {
-  background: linear-gradient(to bottom left, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8));
+  transition: all;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8));
 }
+.img-overlay:hover {
+  background: #ffffffaf;
+  
+}
+.img-overlay:hover > p {
+  color: black;
+}
+.about-head {
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+  
+}
+.about-head::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #05df72;
+  z-index: -1;
+}
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroller {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+} 
