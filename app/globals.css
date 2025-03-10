@@ -9,6 +9,9 @@
 * {
   font-family: "Poppins", serif;
 }
+button {
+  cursor: pointer;
+}
 .img-overlay {
   transition: all;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8));
