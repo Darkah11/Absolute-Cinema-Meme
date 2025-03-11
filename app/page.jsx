@@ -37,13 +37,13 @@ export default function Home() {
         <motion.div variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false }} className=" mx-auto md:mx-0 relative w-fit md:w-full lg:w-fit md:flex md:justify-between gap-x-7 md:items-center">
+          viewport={{ once: false }} className=" mx-auto md:mx-0 relative w-fit  md:w-full md:flex md:justify-between gap-x-7 md:items-center">
           <img
             src="/about-img.png"
             alt=""
-            className=" mx-auto md:mx-0 lg:mx-0 lg:h-[400px]"
+            className=" mx-auto md:mx-0 md:w-[50%]"
           />
-          <div className=" about mt-5 md:mt-0 lg:absolute lg:-right-[34%] lg:bottom-0 bg-white lg:px-16 lg:pt-12 ">
+          <div className=" about mt-5 md:mt-0  bg-white ">
             {/* <div className=" mt-5 md:absolute md:right-0 md:bottom-0 bg-white md:px-16 md:pt-12 "> */}
             <h2 className="  mx-auto uppercase text-3xl text-center font-bold about-head md:text-left md:mx-0">
               About $ABC
