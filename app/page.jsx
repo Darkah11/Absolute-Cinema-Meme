@@ -8,7 +8,7 @@ import { fadeIn } from "./variants";
 export default function Home() {
   return (
     <>
-      <section className=" relative px-5 py-48 lg:px-12 xl:px-24">
+      <section className=" relative px-5 md:px-8 py-48 lg:px-12 xl:px-24">
         <img
           src="/hero-bg.jpg"
           alt="hero background"
@@ -21,13 +21,13 @@ export default function Home() {
           <img src="acm-logo.png" alt="" />
         </motion.div>
         <motion.div
-          variants={fadeIn("right", 0.2)}
+          variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false }}
-          className=" max-w-[350px] md:max-w-fit relative z-30 py-7 lg:py-5 px-3 md:px-10 lg:px-12  border-2 border-green-400"
+          className=" max-w-[350px]  md:max-w-fit relative z-30  "
         >
-          <h1 className=" text-5xl md:text-6xl lg:text-7xl text-white uppercase font-light leading-14 md:leading-16 lg:leading-20">
+          <h1 className=" text-6xl md:text-7xl  lg:text-8xl text-white uppercase font-light leading-16 md:leading-18 lg:leading-24">
             Absolute <br /> Cinema <br /> $ABC{" "}
           </h1>
           {/* <h1 className=" text-3xl text-white uppercase">Do you know about the Absolute Cinema meme that our coin is based on? </h1> */}
@@ -43,24 +43,24 @@ export default function Home() {
             alt=""
             className=" mx-auto md:mx-0 lg:mx-0 lg:h-[400px]"
           />
-          <div className=" mt-5 md:mt-0 lg:absolute lg:-right-[34%] lg:bottom-0 bg-white lg:px-16 lg:pt-12 ">
+          <div className=" about mt-5 md:mt-0 lg:absolute lg:-right-[34%] lg:bottom-0 bg-white lg:px-16 lg:pt-12 ">
             {/* <div className=" mt-5 md:absolute md:right-0 md:bottom-0 bg-white md:px-16 md:pt-12 "> */}
-            <h2 className=" mx-auto uppercase text-2xl text-center font-medium about-head md:text-left md:mx-0">
+            <h2 className="  mx-auto uppercase text-3xl text-center font-bold about-head md:text-left md:mx-0">
               About $ABC
             </h2>
-            <p className=" text-center mt-3 md:text-sm  text-base max-w-[450px] mx-auto md:text-left">
+            <p className=" text-center mt-3 md:text-lg  text-base max-w-[450px] mx-auto md:text-left ">
               Do you know about the Absolute Cinema meme that our coin is based
               on?. Absolute Cinema is a reaction image of film director Martin
-              Scorsese raising his hands captioned with the catchphrase.
+              Scorsese raising his hands captioned with the catchphrase. Once we become the largest meme coin on Abstract chain, it will be an ABSOLUTE CINEMA!.
             </p>
             <div className=" flex justify-center items-center gap-x-5 mt-4 md:justify-start">
               <Link target="_blank" href={"https://t.me/c/2351718598/1342"}>
-                <button className=" hover:border-black hover:bg-black hover:text-white transition-all text-sm md:text-xs border bg-green-400 border-green-400 w-[150px] md:w-[120px] py-3 md:py-2 uppercase font-medium text-white ">
+                <button className=" about-btn hover:border-black hover:bg-black hover:text-white transition-all text-sm md:text-xs border bg-green-400 border-green-400 w-[150px] md:w-[120px] py-3 md:py-2 uppercase font-medium text-white ">
                   join telegram
                 </button>
               </Link>
               <Link target="_blank" href={"https://x.com/absolutecineABS"}>
-                <button className=" hover:border-black md:text-xs hover:text-black transition-all text-sm border border-green-400 w-[150px] md:w-[120px] py-3 md:py-2  uppercase font-medium text-green-400 ">
+                <button className=" about-btn hover:border-black md:text-xs hover:text-black transition-all text-sm border border-green-400 w-[150px] md:w-[120px] py-3 md:py-2  uppercase font-medium text-green-400 ">
                   join x
                 </button>
               </Link>
