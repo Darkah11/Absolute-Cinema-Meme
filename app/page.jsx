@@ -474,7 +474,7 @@ export default function Home() {
           whileInView={"show"}
           viewport={{ once: false }} className=" mt-10">
           <div className=" flex gap-x-3 items-center justify-center">
-            <Link href={"https://t.me/c/2351718598/1342"}>
+            <Link href={"https://t.me/absolutecinemaABS"}>
               <img src="/telegram.svg" alt="" />
             </Link>
             <Link href={"https://x.com/absolutecineABS"}>
