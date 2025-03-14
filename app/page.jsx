@@ -54,7 +54,7 @@ export default function Home() {
               Scorsese raising his hands captioned with the catchphrase. Once we become the largest meme coin on Abstract chain, it will be an ABSOLUTE CINEMA!.
             </p>
             <div className=" flex justify-center items-center gap-x-5 mt-4 md:justify-start">
-              <Link target="_blank" href={"https://t.me/c/2351718598/1342"}>
+              <Link target="_blank" href={"https://t.me/absolutecinemaABS"}>
                 <button className=" about-btn hover:border-black hover:bg-black hover:text-white transition-all text-sm md:text-xs border bg-green-400 border-green-400 w-[150px] md:w-[120px] py-3 md:py-2 uppercase font-medium text-white ">
                   join telegram
                 </button>
