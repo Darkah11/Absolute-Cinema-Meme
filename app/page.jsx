@@ -443,7 +443,7 @@ export default function Home() {
               supply
             </h3>
             <p className=" text-base font-medium uppercase">
-              1% luca & 4% community airdrop
+              1% luca & 4% burnt
             </p>
           </div>
           <div className=" hover:border-black bg-white w-full md:w-[45%] border-5 border-green-400 py-8 text-center mx-auto">
